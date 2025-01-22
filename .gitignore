@@ -13,3 +13,5 @@ deactivate_conanrun.sh
 # Build directory
 build/
 CMakeUserPresets.json
+
+src/app.cdp.demonstrator.code-workspace
