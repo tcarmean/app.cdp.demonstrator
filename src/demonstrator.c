@@ -5,8 +5,10 @@
 // demonstrator.c
 #include <stdio.h>
 #include "module_a.h"
+#include "module_b.h"
 
 int main() {
-    hello_world();
+    hello_a();
+    hello_b();
     return 0;
 }
