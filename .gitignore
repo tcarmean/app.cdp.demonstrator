@@ -14,4 +14,4 @@ CMakeUserPresets.json
 
 # Local VSC settings
 src/app.cdp.demonstrator.code-workspace
-src/.vscode/
+.vscode/
