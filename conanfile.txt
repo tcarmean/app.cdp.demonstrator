@@ -5,3 +5,6 @@ module_b/0.1
 [generators]
 CMakeToolchain
 CMakeDeps
+
+[layout]
+cmake_layout
