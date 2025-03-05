@@ -25,4 +25,5 @@ class Demonstrator(ConanFile)
         self.cpp_info.set_version("0.1")
         self.cpp_info.set_description("A simple demonstrator")
         self.cpp_info.set_license("MIT")
-        self.cpp_info.set_url("
+        self.cpp_info.set_url("https://github.com/tcarmean/app.cdp.demonstrator")
+        
