@@ -1,0 +1,7 @@
+[requires]
+module_a/0.1
+module_b/0.1
+
+[generators]
+CMakeToolchain
+CMakeDeps

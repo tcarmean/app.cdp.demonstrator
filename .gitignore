@@ -1,17 +1,17 @@
 # Conan and CMake generated files
 CMakePresets.json
-cmakedeps_macros.cmake
-conan_toolchain.cmake
 conanbuild.sh
 conanbuildenv-*.sh
-conandeps_legacy.cmake
 conanrun.sh
 conanrunenv-*.sh
 deactivate_conanbuild.sh
 deactivate_conanrun.sh
+*.cmake
 
 # Build directory
 build/
 CMakeUserPresets.json
 
+# Local VSC settings
 src/app.cdp.demonstrator.code-workspace
+.vscode/
