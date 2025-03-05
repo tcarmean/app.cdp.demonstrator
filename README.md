@@ -1,7 +1,6 @@
-# app.cdp.demonstrator
+# A simple demonstration of an application managed completely by Conan
 
+## Build Instructions:
 ```
-conan install .
-cmake --preset conan-release
-cmake --build --preset conan-release
+conan build .
 ````
