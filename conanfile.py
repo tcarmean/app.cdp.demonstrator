@@ -1,5 +1,5 @@
 from conan import ConanFile
-from conan.tools.cmake import CMake, CMakeToolchain, cmake_layout, CMakedeps
+from conan.tools.cmake import CMake, CMakeToolchain, cmake_layout, CMakeDeps
 
 class Demonstrator(ConanFile):
     name = "demonstrator"
@@ -8,7 +8,7 @@ class Demonstrator(ConanFile):
     generators = "CMakeDeps", "CMakeToolchain"
     requires = "module_a/0.1", "module_b/0.1"
     package_type = "application"
-    
+
 
     def layout(self):
         cmake_layout(self)
