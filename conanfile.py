@@ -1,7 +1,7 @@
 from conan import ConanFile
 from conan.tools.cmake import CMake, CMakeToolchain, cmake_layout, CMakedeps
 
-class Demonstrator(ConanFile)
+class Demonstrator(ConanFile):
     name = "demonstrator"
     version = "0.1"
     settings = "os", "compiler", "build_type", "arch"
