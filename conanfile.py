@@ -10,7 +10,7 @@ class Demonstrator(ConanFile):
     exports_sources = "CMakeLists.txt", "src/*", "include/*"
 
     def layout(self):
-        return cmake_layout.CMakeLayout(self)
+        cmake_layout(self)
 
     def build(self):
         cmake = CMake(self)
