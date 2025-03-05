@@ -7,6 +7,7 @@ class Demonstrator(ConanFile)
     settings = "os", "compiler", "build_type", "arch"
     generators = "CMakeDeps", "CMakeToolchain"
     requires = "module_a/0.1", "module_b/0.1"
+    exports_sources = "CMakeLists.txt", "src/*", "include/*"
 
     def layout(self):
         return cmake_layout.CMakeLayout(self)
@@ -26,4 +27,3 @@ class Demonstrator(ConanFile)
         self.cpp_info.set_description("A simple demonstrator")
         self.cpp_info.set_license("MIT")
         self.cpp_info.set_url("https://github.com/tcarmean/app.cdp.demonstrator")
-        
