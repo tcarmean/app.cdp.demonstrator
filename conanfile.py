@@ -1,0 +1,28 @@
+from conan import ConanFile
+from conan.tools.cmake import CMake, CMakeToolchain, cmake_layout, CMakedeps
+
+class Demonstrator(ConanFile)
+    name = "demonstrator"
+    version = "0.1"
+    settings = "os", "compiler", "build_type", "arch"
+    generators = "CMakeDeps", "CMakeToolchain"
+    requires = "module_a/0.1", "module_b/0.1"
+
+    def layout(self):
+        return cmake_layout.CMakeLayout(self)
+
+    def build(self):
+        cmake = CMake(self)
+        cmake.configure()
+        cmake.build()
+
+    def package(self):
+        cmake = CMake(self)
+        cmake.install()
+
+    def package_info(self):
+        self.cpp_info.set_name("Demonstrator")
+        self.cpp_info.set_version("0.1")
+        self.cpp_info.set_description("A simple demonstrator")
+        self.cpp_info.set_license("MIT")
+        self.cpp_info.set_url("
